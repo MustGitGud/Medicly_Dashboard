@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="398dp"
+        android:layout_height="73dp"
+        android:background="#E43F6F"
+        android:text="@string/dashboard"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <Button
+        android:id="@+id/medCliLocBtn"
+        android:layout_width="162dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/medical_clinic_scheduling"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AppSchedBtn"
+        android:layout_width="162dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/appointment_scheduling"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/medRecBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medRecBtn"
+        app:layout_constraintTop_toBottomOf="@+id/medRecBtn" />
+
+    <Button
+        android:id="@+id/AccSetBtn"
+        android:layout_width="162dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/account_settings"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/medCliLocBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medCliLocBtn"
+        app:layout_constraintTop_toBottomOf="@+id/medCliLocBtn" />
+
+    <Button
+        android:id="@+id/medRecBtn"
+        android:layout_width="162dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/medical_records"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icBell"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/medCliLocBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/ic_bell" />
+
+    <ImageButton
+        android:id="@+id/extBtn"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="96dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_logout" />
+
+    <TextView
+        android:id="@+id/SgnOutTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="Sign Out"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/extBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/extBtn"
+        app:layout_constraintTop_toBottomOf="@+id/extBtn"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+</android.support.constraint.ConstraintLayout>
