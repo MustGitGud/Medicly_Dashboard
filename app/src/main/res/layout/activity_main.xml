@@ -4,19 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B8E1FF"
     tools:context=".MainActivity">
-
 
     <TextView
         android:id="@+id/header"
         android:layout_width="398dp"
         android:layout_height="73dp"
         android:background="#E43F6F"
+        android:fontFamily="@font/lato_bold"
+        android:paddingTop="6dp"
+        android:paddingLeft="10dp"
         android:text="@string/dashboard"
         android:textColor="#000000"
         android:textSize="34sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="5dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/hello_user"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.833" />
 
     <Button
         android:id="@+id/medRecBtn"
@@ -24,9 +40,14 @@
         android:layout_height="170dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="160dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#4770FF"
+        android:drawableBottom="@drawable/ic_medical_records"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:paddingBottom="15dp"
         android:text="@string/medical_records"
         android:textSize="20sp"
-        android:drawableBottom="@drawable/ic_medical_records"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,9 +57,14 @@
         android:layout_height="170dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="28dp"
-        android:text="@string/medical_clinic_scheduling"
-        android:textSize="20sp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#4770FF"
         android:drawableBottom="@drawable/ic_google_map"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:text="@string/medical_clinic_scheduling"
+        android:textSize="19dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,9 +73,14 @@
         android:layout_width="162dp"
         android:layout_height="170dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#4770FF"
+        android:drawableBottom="@drawable/ic_calendar"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:paddingBottom="15dp"
         android:text="@string/appointment_scheduling"
         android:textSize="19sp"
-        android:drawableBottom="@drawable/ic_calendar"
         app:layout_constraintEnd_toEndOf="@+id/medRecBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/medRecBtn"
@@ -60,9 +91,14 @@
         android:layout_width="162dp"
         android:layout_height="170dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#A8BAFB"
+        android:drawableBottom="@drawable/ic_settings"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:paddingBottom="15dp"
         android:text="@string/account_settings"
         android:textSize="20sp"
-        android:drawableBottom="@drawable/ic_settings"
         app:layout_constraintEnd_toEndOf="@+id/medCliLocBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/medCliLocBtn"
@@ -101,6 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="50dp"
+        android:fontFamily="@font/lato_bold"
         android:text="Sign Out"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,6 +146,5 @@
         app:layout_constraintStart_toStartOf="@+id/extBtn"
         app:layout_constraintTop_toBottomOf="@+id/extBtn"
         app:layout_constraintVertical_bias="0.25" />
-
 
 </android.support.constraint.ConstraintLayout>
